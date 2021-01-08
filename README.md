@@ -20,9 +20,9 @@ bitbake-layers add-layer ../meta-assignment280098
 ```
 4. Add the new recipes to the image to be deployed: in the file conf/local.conf inside the build_rpi3 directory, add the following lines:
 ```
-IMAGE_INSTALL_append = " heartbeatApplication"
-IMAGE_INSTALL_append = " heartbeatModule"
-KERNEL_MODULE_AUTOLOAD += "heartbeatModule"
+IMAGE_INSTALL_append = " heartbeatapplication"
+IMAGE_INSTALL_append = " heartbeatmodule"
+KERNEL_MODULE_AUTOLOAD += "heartbeatmodule"
 ```
 5. Run bitbake:
 ```bash
@@ -45,5 +45,5 @@ mknod /dev/mymod c 251 0
 ```
 3. Launch the heartbeat application:
 ```bash
-heartbeatApplication
+heartbeatapplication
 ```
