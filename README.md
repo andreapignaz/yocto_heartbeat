@@ -34,6 +34,7 @@ sudo dd if=tmp/deploy/images/raspberrypi3/core-image-full-cmdline-raspberrypi3.r
 ```
 
 ## Use the driver and the application
+After the Raspberry Pi did boot up:
 1. Read /proc/devices to identify the _mymod\_dev_ kernel module, and take note of major and minor number.
 ```bash
 cat /proc/devices | grep mymod
