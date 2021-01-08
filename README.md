@@ -1,5 +1,5 @@
 # meta-assignment280098
-Assignment for Politecnico di Torino course, "Operating Systems for Embedded Systems"
+Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
 ## Target machine
 These Yocto layers have been designed to work on the Raspberry Pi 3B. Compatibility has been set to that device only.
