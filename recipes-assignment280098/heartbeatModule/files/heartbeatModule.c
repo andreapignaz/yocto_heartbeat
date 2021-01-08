@@ -17,7 +17,6 @@ ssize_t mymod_read(struct file *filp, char __user *buf, size_t count, loff_t *f_
 {
 	int status, i;
 	sprintf(ppg_buffer, "%d", ppg[(int)*f_pos]);
-	status = copy_to_user(buf, ppg_buffer, 5);
 	if (status != 0)
 		printk(KERN_INFO " [heartrate] error reading value from heartrate sensor\n" );
 	else
