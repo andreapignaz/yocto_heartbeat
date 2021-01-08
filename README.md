@@ -1,6 +1,11 @@
 # meta-assignment280098
 Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
+## To-Dos
+Correct all the names of the recipes with undercase letters
+Implement threads
+Add tutorial to set up build environment for the rpi3
+
 ## Target machine
 These Yocto layers have been designed to work on the Raspberry Pi 3B. Compatibility has been set to that device only.
 This tutorial should be done on a build environment that has been already configured for the rpi3 (layers cloned and added to bblayers.conf, local.conf and interfaces properly set).
@@ -41,7 +46,7 @@ cat /proc/devices | grep mymod
 ```
 2. Create the device file using _mknod_
 ```bash
-mknod /dev/mymod c 251 0
+mknod /dev/mymod c 241 0
 ```
 3. Launch the heartbeat application:
 ```bash
