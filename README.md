@@ -16,8 +16,8 @@ source oe-init-build-env build_rpi3
 ```
 3. Add the new recipes to the image to be deployed: in the file conf/local.conf inside the build_rpi3 directory, add the following lines:
 ```
-IMAGE_INSTALL_append = "heartbeatApplication"
-IMAGE_INSTALL_append = "heartbeatModule"
+IMAGE_INSTALL_append = " heartbeatApplication"
+IMAGE_INSTALL_append = " heartbeatModule"
 KERNEL_MODULE_AUTOLOAD += "heartbeatModule"
 ```
 4. Run bitbake:
