@@ -14,13 +14,17 @@ git clone https://github.com/andreapignaz/meta-assignment280098.git
 ```bash
 source oe-init-build-env build_rpi3
 ```
-3. Add the new recipes to the image to be deployed: in the file conf/local.conf inside the build_rpi3 directory, add the following lines:
+3. Add the cloned layer to the Poky configuration:
+```bash
+bitbake-layers add-layer meta-assignment280098
+```
+4. Add the new recipes to the image to be deployed: in the file conf/local.conf inside the build_rpi3 directory, add the following lines:
 ```
 IMAGE_INSTALL_append = " heartbeatApplication"
 IMAGE_INSTALL_append = " heartbeatModule"
 KERNEL_MODULE_AUTOLOAD += "heartbeatModule"
 ```
-4. Run bitbake:
+5. Run bitbake:
 ```
 bitbake core-image-full-cmdline 
 ```
