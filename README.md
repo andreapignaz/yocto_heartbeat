@@ -2,7 +2,7 @@
 Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
 ## Target machine
-These Yocto layers have been designed (and tested) to work on the Raspberry Pi 3B.  
+This Yocto layer has been designed (and tested) to work on the Raspberry Pi 3B.  
 
 ## Add the recipes to Yocto and build the Linux image
 1. Clone this repository inside your Yocto directory:
