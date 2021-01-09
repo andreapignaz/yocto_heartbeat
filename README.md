@@ -13,7 +13,7 @@ git clone https://github.com/andreapignaz/meta-assignment280098.git
 ```bash
 source oe-init-build-env build_rpi3
 ```
-3. Add the cloned layer to Poky:
+3. Add the cloned layer to the rpi3 building container:
 ```bash
 bitbake-layers add-layer ../meta-assignment280098
 ```
