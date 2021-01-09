@@ -1,12 +1,8 @@
 # meta-assignment280098
 Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
-## To-Dos
-Add tutorial to set up build environment for the rpi3
-
 ## Target machine
-These Yocto layers have been designed to work on the Raspberry Pi 3B. Compatibility has been set to that device only.
-This tutorial should be done on a build environment that has been already configured for the rpi3 (layers cloned and added to bblayers.conf, local.conf and interfaces properly set).
+These Yocto layers have been designed (and tested) to work on the Raspberry Pi 3B.  
 
 ## Add the recipes to Yocto and build the Linux image
 1. Clone this repository inside your Yocto directory:
