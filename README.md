@@ -2,9 +2,7 @@
 Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
 ## To-Dos
-1. Correct all the names of the recipes with undercase letters
-2. Implement threads
-3. Add tutorial to set up build environment for the rpi3
+Add tutorial to set up build environment for the rpi3
 
 ## Target machine
 These Yocto layers have been designed to work on the Raspberry Pi 3B. Compatibility has been set to that device only.
