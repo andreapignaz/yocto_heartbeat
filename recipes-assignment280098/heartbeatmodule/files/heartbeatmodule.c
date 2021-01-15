@@ -12,6 +12,7 @@ static dev_t mymod_dev;
 struct cdev mymod_cdev;
 static char buffer[64];
 static char ppg_buffer[5];
+struct class *myclass = NULL;
 
 ssize_t mymod_read(struct file *filp, char __user *buf, size_t count, loff_t *f_pos)
 {
@@ -35,9 +36,13 @@ struct file_operations mymod_fops = {
 
 static int __init mymod_module_init(void)
 {
+	struct device* mymod_device;
+	
 	printk(KERN_INFO "Loading heartrate_module\n");
+	myclass = class_create(THIS_MODULE, "mymod_dev");
 	alloc_chrdev_region(&mymod_dev, 0, 1, "mymod_dev");
 	printk(KERN_INFO "%s\n", format_dev_t(buffer, mymod_dev));
+	mymod_device = device_create(myclass,NULL,mymod_dev,NULL,"mysensor");
 	cdev_init(&mymod_cdev, &mymod_fops);
 	mymod_cdev.owner = THIS_MODULE;
 	cdev_add(&mymod_cdev, mymod_dev, 1);
