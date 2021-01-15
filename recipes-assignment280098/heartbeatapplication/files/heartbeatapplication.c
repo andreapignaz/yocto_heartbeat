@@ -72,7 +72,7 @@ int main(int argc, char **argv)
 	int ret;
 	pthread_t myThread;
 	char *app_name = argv[0];
-	char *dev_name = "/dev/mymod";
+	char *dev_name = "/dev/mysensor";
 	int i = 0;
 	int m, minIdx, maxIdx;
 	
