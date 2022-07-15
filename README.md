@@ -1,4 +1,4 @@
-# meta-assignment280098
+# yocto_heartbeat
 Assignment for the Politecnico di Torino course, "Operating Systems for Embedded Systems"
 
 ## Target machine
